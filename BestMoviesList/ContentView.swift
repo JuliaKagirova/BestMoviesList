@@ -16,10 +16,12 @@ struct ContentView: View {
                 .tabItem {
                     Label("Best", systemImage: "movieclapper")
                 }
+            
             Text("You watched this film!")
                 .tabItem {
                     Label("Watched", systemImage: "checkmark.seal")
                 }
+            
             Text("Profile")
                 .tabItem {
                     Label("Profile", systemImage: "person.crop.circle")

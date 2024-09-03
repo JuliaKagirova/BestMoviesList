@@ -64,6 +64,6 @@ struct Post: Identifiable {
             subTitle: "33 of 100",
             description: "With her directorial debut, the wry wit and emotional potency of Greta Gerwig's previous work came even sharper into focus – telling a beautifully nuanced coming-of-age story about mothers, daughters, and the hometowns you yearn to leave, only for them to be truly appreciated in the rear-view mirror. Saoirse Ronan is perfectly precocious as the not-always-likeable Christine 'Lady Bird' McPherson, experiencing fractured friendships, first fuckboys, and fateful fumbles in her final year of high school in 2003 Sacramento.",
             image: Image(.bird)
-        )
+        ) 
     ]
 }

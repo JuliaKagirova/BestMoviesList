@@ -10,8 +10,7 @@ import SwiftUI
 struct InfoDetailsView: View {
     var post: Post
     var body: some View {
-        ScrollView {
-            //full width image
+        ScrollView {   //full width image
             post.image
                 .resizable()
                 .scaledToFit()

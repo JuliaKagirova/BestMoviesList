@@ -45,5 +45,5 @@ struct SettingView: View {
 }
 
 #Preview {
-    SettingView()
+    SettingView() 
 }

@@ -10,7 +10,7 @@ import SwiftUI
 //строка для списка List
 
 struct InfoRowView: View {
-    var post: Post //модель данных, используется фото и заголовок
+    var post: Post  //модель данных, используется фото и заголовок
     
     var body: some View {
         HStack {  //фото с модификаторами изображения
