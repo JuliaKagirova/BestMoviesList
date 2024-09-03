@@ -13,7 +13,7 @@ struct InfoRowView: View {
     var post: Post  //модель данных, используется фото и заголовок
     
     var body: some View {
-        HStack {  //фото с модификаторами изображения
+        HStack {   //фото с модификаторами изображения
             post.image
                 .resizable()
                 .scaledToFill()

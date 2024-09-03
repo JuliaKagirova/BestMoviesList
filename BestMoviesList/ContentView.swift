@@ -22,7 +22,7 @@ struct ContentView: View {
                     Label("Watched", systemImage: "checkmark.seal")
                 }
             
-            Text("Profile")
+            Text("Profile") 
                 .tabItem {
                     Label("Profile", systemImage: "person.crop.circle")
                 }
