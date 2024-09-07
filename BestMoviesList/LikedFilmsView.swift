@@ -34,10 +34,11 @@ struct SheetView: View {
                 dismiss()
             }
             .font(.title2).padding()
+            .foregroundColor(.white)
         }
-        .background(.orange)
-        .cornerRadius(15)
-        .padding(.all, 16)
+        .background(.green)
+        .cornerRadius(10)
+        .padding(.all, 22)
     }
 }
 

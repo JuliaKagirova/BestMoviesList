@@ -9,22 +9,24 @@ import SwiftUI
 import CoreData
 
 struct ContentView: View {
+    @State private var titleOn: Bool = false
     
     var body: some View {
         TabView() {
-            InfoView()
+            //Best
+            InfoView(titleOn: titleOn)
                 .tabItem {
                     Label("Best", systemImage: "movieclapper")
                 }
-            
-            Text("You watched this film!")
+            //Liked
+            LikedFilmsView()
                 .tabItem {
-                    Label("Watched", systemImage: "checkmark.seal")
+                    Label("Liked", systemImage: "heart")
                 }
-            
-            Text("Profile") 
+            //Settings
+            SettingView(titleOn: $titleOn)
                 .tabItem {
-                    Label("Profile", systemImage: "person.crop.circle")
+                    Label("Settings", systemImage: "gear")
                 }
         }
     }

@@ -26,7 +26,7 @@ struct InfoView : View {
                     InfoRowView(post: post)
                 }
             }
-            .navigationTitle("Best Movies")
+            .navigationTitle( titleOn ? "Best Movies" : "")
             .listStyle(.plain)
         }
     }

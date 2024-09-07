@@ -8,42 +8,53 @@
 import SwiftUI
 
 struct SettingView: View {
+    @Environment(\.colorScheme) var colorScheme 
+    @Binding var titleOn: Bool
+//    @AppStorage("titleOn2") private var titleOn2 = false
+    @State private var toggler = true
+
     var body: some View {
-        Text("Settings")
-            .padding(.all, 12)
-        
-        Form(content: {
-            Toggle(isOn: .constant(true)) {
-                Text("Face ID")
-            }
-            Toggle(isOn: .constant(true)) {
-                Text("VPN")
-            }
-            Text("iCloud")
-        })
-        
-        Section("Notification") {
-            Toggle(isOn: .constant(true), label: {
-                Text("Sound")
-                    .padding(12)
-                    .padding(.bottom, 10)
+        NavigationView {
+            Form(content: {
+                Section("General") {
+                    Toggle(isOn: .constant(true)) {
+                        Text("Face ID")
+                    }
+                    Toggle(isOn: .constant(true)) {
+                        Text("VPN")
+                    }
+                    Text("iCloud")
+                }
+                
+                Section("Appearence") {
+                        Text("Theme: ") +
+                                Text("\(colorScheme == .dark ? "dark mode" : "light mode")").bold()
+                    Toggle("Title ", isOn: $titleOn.animation())
+                        .onChange(of: titleOn) {
+                            if titleOn {
+                                toggler.toggle()
+                            }
+                        }
+                    if titleOn {
+                        // some action
+                        Text("Navigation title enabled")
+                    }
+                }
+                Section("Notification") {
+                    Toggle(isOn: .constant(true), label: {
+                        Text("Sound")
+                    })
+                    Toggle(isOn: .constant(true)) {
+                        Text("Badge")
+                    }
+                }
             })
-            Toggle(isOn: .constant(true)) {
-                Text("Badge")
-                    .padding(12)
-            }
+            .navigationTitle("Settings")
         }
-        Section("Appearence") {
-            Toggle(isOn: .constant(true), label: {
-                Text("Dark Theme")
-                    .padding(12)
-            })
-        }
-        .padding(.bottom, 12)
-        .cornerRadius(10)
+        
     }
 }
 
 #Preview {
-    SettingView()
+    SettingView(titleOn: .constant(true))
 }

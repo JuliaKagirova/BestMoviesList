@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct TextFielder: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+struct TextFielder: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .frame(height: 50)
+            .padding(.leading, 12)
+            .border(Color(UIColor.lightGray), width: 0.5)
+            .background(Color(.systemGray6))
     }
-}
-
-#Preview {
-    TextFielder()
 }
