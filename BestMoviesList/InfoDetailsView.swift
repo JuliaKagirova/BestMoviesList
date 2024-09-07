@@ -8,8 +8,13 @@
 import SwiftUI
 // статья
 struct InfoDetailsView: View {
+    
+    @State private var showingAlert = false
+    
     var post: Post
+    
     var body: some View {
+        
         ScrollView {    //full width image
             post.image
                 .resizable()
@@ -28,9 +33,24 @@ struct InfoDetailsView: View {
                 Text(post.description)
             }
             .padding()
+            
+            .navigationTitle(post.title)
+            .background (Color(.systemGray6))
+            
+            Button("Like") {
+                showingAlert = true
+            }
+            .padding(.all, 12)
+            .border(.yellow, width: 2)
+            .cornerRadius(10)
+            
+            .font(.title3).fontWeight(.bold)
+            .foregroundColor(.indigo)
+            .padding()
+            .alert("You liked this film", isPresented: $showingAlert) {
+                Button("Perfect", role: .cancel) { }
+            }
         }
-        .navigationTitle(post.title)
-        .background (Color(.systemGray6))
     }
 }
 
