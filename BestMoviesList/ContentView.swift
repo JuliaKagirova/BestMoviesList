@@ -9,7 +9,7 @@ import SwiftUI
 import CoreData
 
 struct ContentView: View {
-    @State private var titleOn: Bool = false
+    @AppStorage("titleOn") private var titleOn: Bool = false
     
     var body: some View {
         TabView() {
