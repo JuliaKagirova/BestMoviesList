@@ -6,10 +6,28 @@
 //
 
 import SwiftUI
+import SpriteKit
 
 struct EffectSandbox: View {
+    
+    @State private var range = 1.0
+    
+    let startDate = Date()
+    var shader: Shader {
+        switch range {
+        case 0...1:
+            ShaderLibrary.checkerboard(.float(5/range), .color(.gray))
+        default:
+            ShaderLibrary.noise(.float(startDate.timeIntervalSinceNow))
+        }
+    }
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            GeometryReader(content: { geometry in
+                SpriteView(scene: StarsScene(size: geometry.size)).frame(width: geometry.size.width, height: geometry.size.height)
+            })
+            .ignoresSafeArea(edges: [.top])
+        }
     }
 }
 

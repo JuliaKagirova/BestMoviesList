@@ -10,7 +10,6 @@ import SwiftUI
 struct SettingView: View {
     @Environment(\.colorScheme) var colorScheme 
     @Binding var titleOn: Bool
-//    @AppStorage("titleOn2") private var titleOn2 = false
     @State private var toggler = true
 
     var body: some View {

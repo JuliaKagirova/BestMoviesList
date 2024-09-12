@@ -16,6 +16,8 @@ struct InfoDetailsView: View {
     var body: some View {
         
         ScrollView {    //full width image
+            Text("Musical")
+            Spacer(minLength: 12)
             post.image
                 .resizable()
                 .scaledToFit()

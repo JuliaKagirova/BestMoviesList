@@ -20,6 +20,15 @@
 		1F7334852C87A48400BC52ED /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7334842C87A48400BC52ED /* SettingsView.swift */; };
 		1F73348F2C8C669B00BC52ED /* LikedFilmsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F73348E2C8C669B00BC52ED /* LikedFilmsView.swift */; };
 		1F7334922C8CA09C00BC52ED /* TextFielder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7334912C8CA09C00BC52ED /* TextFielder.swift */; };
+		1F7334952C90905900BC52ED /* UIKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7334942C90905900BC52ED /* UIKitView.swift */; };
+		1F7334972C9092BC00BC52ED /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7334962C9092BC00BC52ED /* SwiftUIView.swift */; };
+		1F73349A2C90988800BC52ED /* EffectSandbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7334992C90988800BC52ED /* EffectSandbox.swift */; };
+		1F73349C2C909AFF00BC52ED /* StarsScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F73349B2C909AFF00BC52ED /* StarsScene.swift */; };
+		1F7334A02C917E4E00BC52ED /* Shapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F73349F2C917E4E00BC52ED /* Shapes.swift */; };
+		1F7334A22C9180F900BC52ED /* UIBezierPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7334A12C9180F900BC52ED /* UIBezierPath.swift */; };
+		1F7334A52C9183D000BC52ED /* AnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7334A42C9183D000BC52ED /* AnimationView.swift */; };
+		1F7334B42C91D15100BC52ED /* StatisticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7334B32C91D15100BC52ED /* StatisticView.swift */; };
+		1F7334B62C93226300BC52ED /* GenresOfMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7334B52C93226300BC52ED /* GenresOfMovie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +46,15 @@
 		1F7334842C87A48400BC52ED /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		1F73348E2C8C669B00BC52ED /* LikedFilmsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedFilmsView.swift; sourceTree = "<group>"; };
 		1F7334912C8CA09C00BC52ED /* TextFielder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFielder.swift; sourceTree = "<group>"; };
+		1F7334942C90905900BC52ED /* UIKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitView.swift; sourceTree = "<group>"; };
+		1F7334962C9092BC00BC52ED /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		1F7334992C90988800BC52ED /* EffectSandbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffectSandbox.swift; sourceTree = "<group>"; };
+		1F73349B2C909AFF00BC52ED /* StarsScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarsScene.swift; sourceTree = "<group>"; };
+		1F73349F2C917E4E00BC52ED /* Shapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shapes.swift; sourceTree = "<group>"; };
+		1F7334A12C9180F900BC52ED /* UIBezierPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBezierPath.swift; sourceTree = "<group>"; };
+		1F7334A42C9183D000BC52ED /* AnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationView.swift; sourceTree = "<group>"; };
+		1F7334B32C91D15100BC52ED /* StatisticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticView.swift; sourceTree = "<group>"; };
+		1F7334B52C93226300BC52ED /* GenresOfMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresOfMovie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +87,11 @@
 		1F7334682C87A3D800BC52ED /* BestMoviesList */ = {
 			isa = PBXGroup;
 			children = (
+				1F7334A62C919C0000BC52ED /* Charts */,
+				1F7334A32C9183C100BC52ED /* Animation */,
+				1F73349E2C917E4200BC52ED /* Shapes */,
+				1F73349D2C917E2400BC52ED /* Integrations */,
+				1F7334982C90987200BC52ED /* Effects */,
 				1F7334932C8CA0A700BC52ED /* Resources */,
 				1F7334902C8CA07700BC52ED /* Models */,
 				1F7334692C87A3D800BC52ED /* BestMoviesListApp.swift */,
@@ -108,6 +131,50 @@
 				1F7334912C8CA09C00BC52ED /* TextFielder.swift */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		1F7334982C90987200BC52ED /* Effects */ = {
+			isa = PBXGroup;
+			children = (
+				1F7334992C90988800BC52ED /* EffectSandbox.swift */,
+				1F73349B2C909AFF00BC52ED /* StarsScene.swift */,
+			);
+			path = Effects;
+			sourceTree = "<group>";
+		};
+		1F73349D2C917E2400BC52ED /* Integrations */ = {
+			isa = PBXGroup;
+			children = (
+				1F7334962C9092BC00BC52ED /* SwiftUIView.swift */,
+				1F7334942C90905900BC52ED /* UIKitView.swift */,
+			);
+			path = Integrations;
+			sourceTree = "<group>";
+		};
+		1F73349E2C917E4200BC52ED /* Shapes */ = {
+			isa = PBXGroup;
+			children = (
+				1F73349F2C917E4E00BC52ED /* Shapes.swift */,
+				1F7334A12C9180F900BC52ED /* UIBezierPath.swift */,
+			);
+			path = Shapes;
+			sourceTree = "<group>";
+		};
+		1F7334A32C9183C100BC52ED /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				1F7334A42C9183D000BC52ED /* AnimationView.swift */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		1F7334A62C919C0000BC52ED /* Charts */ = {
+			isa = PBXGroup;
+			children = (
+				1F7334B32C91D15100BC52ED /* StatisticView.swift */,
+				1F7334B52C93226300BC52ED /* GenresOfMovie.swift */,
+			);
+			path = Charts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,16 +247,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F7334A22C9180F900BC52ED /* UIBezierPath.swift in Sources */,
+				1F7334972C9092BC00BC52ED /* SwiftUIView.swift in Sources */,
+				1F7334B62C93226300BC52ED /* GenresOfMovie.swift in Sources */,
 				1F7334762C87A3DA00BC52ED /* BestMoviesList.xcdatamodeld in Sources */,
 				1F7334732C87A3DA00BC52ED /* Persistence.swift in Sources */,
 				1F73346C2C87A3D800BC52ED /* ContentView.swift in Sources */,
+				1F73349A2C90988800BC52ED /* EffectSandbox.swift in Sources */,
+				1F73349C2C909AFF00BC52ED /* StarsScene.swift in Sources */,
+				1F7334952C90905900BC52ED /* UIKitView.swift in Sources */,
 				1F73348F2C8C669B00BC52ED /* LikedFilmsView.swift in Sources */,
 				1F7334852C87A48400BC52ED /* SettingsView.swift in Sources */,
 				1F7334832C87A45100BC52ED /* Post.swift in Sources */,
 				1F73347F2C87A42C00BC52ED /* InfoRowView.swift in Sources */,
+				1F7334A02C917E4E00BC52ED /* Shapes.swift in Sources */,
+				1F7334B42C91D15100BC52ED /* StatisticView.swift in Sources */,
 				1F7334812C87A44100BC52ED /* InfoDetailsView.swift in Sources */,
 				1F7334922C8CA09C00BC52ED /* TextFielder.swift in Sources */,
 				1F73347D2C87A41100BC52ED /* InfoView.swift in Sources */,
+				1F7334A52C9183D000BC52ED /* AnimationView.swift in Sources */,
 				1F73346A2C87A3D800BC52ED /* BestMoviesListApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

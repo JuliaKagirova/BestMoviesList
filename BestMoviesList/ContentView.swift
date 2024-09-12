@@ -7,6 +7,7 @@
 
 import SwiftUI
 import CoreData
+import Charts
 
 struct ContentView: View {
     @AppStorage("titleOn") private var titleOn: Bool = false
@@ -23,6 +24,12 @@ struct ContentView: View {
                 .tabItem {
                     Label("Liked", systemImage: "heart")
                 }
+            //Statistic
+            StatisticView()
+                .tabItem {
+                    Label("Statistic", systemImage: "chart.xyaxis.line")
+                }
+            
             //Settings
             SettingView(titleOn: $titleOn)
                 .tabItem {

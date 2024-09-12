@@ -7,12 +7,26 @@
 
 import SwiftUI
 
-struct UIBezierPath: View {
+struct BezierView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+//            BezierShape(bezierPath: .southAfrica)
+//                .foregroundColor(.green)
+            Text("Africa")
+                .font(.title)
+            Spacer()
+        }
+    }
+}
+
+struct BezierShape: Shape {
+    let bezierPath: UIBezierPath
+    
+    func path(in rect: CGRect) -> Path {
+        return Path(bezierPath.cgPath)
     }
 }
 
 #Preview {
-    UIBezierPath()
+    BezierView()
 }

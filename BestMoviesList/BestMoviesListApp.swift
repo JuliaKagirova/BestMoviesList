@@ -17,5 +17,6 @@ struct BestMoviesListApp: App {
             ContentView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
+//        .modelContainer(DataController.container())
     }
 }
